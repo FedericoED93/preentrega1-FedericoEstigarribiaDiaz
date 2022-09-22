@@ -1,0 +1,64 @@
+.navMod {
+  background-color: #19cece;
+  color: white;
+}
+
+.navText {
+  color: white;
+}
+
+.navText:hover {
+  color: #fbdd00;
+}
+
+.navText:focus {
+  color: #fbdd00;
+}
+
+.dropdownCat {
+  box-shadow: 0.5rem 0.5rem 0 0 #fbdd00;
+}
+.dropdownCat li {
+  transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  padding-left: 00.5rem;
+}
+.dropdownCat li:hover {
+  box-shadow: inset 12.5rem 0 0 0 #fbdd00;
+}
+.dropdownLink {
+  color: #19cece;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+.dropdownLink:hover {
+  color: #7d7b76;
+}
+
+.buttonMod {
+  outline: 0;
+  border: 0.063rem solid white;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  color: #7d7b76;
+  font-weight: bold;
+}
+
+.buttonMod::after {
+  content: "";
+  background-color: #fbdd00;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 0.438rem;
+  left: 0.438rem;
+  transition: 0.2s;
+  border-radius: 0.25rem;
+}
+
+.buttonMod:hover::after {
+  top: 0;
+  left: 0;
+}
